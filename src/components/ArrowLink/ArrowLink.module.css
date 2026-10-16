@@ -1,0 +1,25 @@
+.arrowLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: 500;
+  color: var(--color-accent);
+  text-decoration: none;
+  text-underline-offset: 3px;
+  transition: all var(--transition-fast);
+}
+
+.arrowLink:hover {
+  text-decoration: underline;
+  gap: 0.5rem;
+}
+
+.arrow {
+  transition: transform var(--transition-fast);
+}
+
+.arrowLink:hover .arrow {
+  transform: translate(2px, -2px);
+}

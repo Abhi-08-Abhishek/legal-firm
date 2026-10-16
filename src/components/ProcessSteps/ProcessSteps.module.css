@@ -1,0 +1,38 @@
+.processSteps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-lg);
+  margin-top: 2.5rem;
+}
+
+.step {
+  border-top: 3px solid var(--color-accent);
+  padding-top: 1.5rem;
+}
+
+.stepNumber {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.stepTitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-h3);
+  color: var(--color-text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.stepDesc {
+  font-size: var(--text-small);
+  color: var(--color-text-body);
+  line-height: var(--leading-relaxed);
+}
+
+@media (max-width: 768px) {
+  .processSteps {
+    grid-template-columns: 1fr;
+    gap: var(--gap-lg);
+  }
+}

@@ -1,0 +1,91 @@
+.ctaBanner {
+  background-color: var(--color-bg-dark);
+  padding: 3.5rem 0;
+}
+
+.ctaInner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.ctaLabel {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 0.75rem;
+}
+
+.ctaContent {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  flex-wrap: wrap;
+}
+
+.ctaHeading {
+  font-family: var(--font-heading);
+  font-size: var(--text-h1);
+  color: var(--color-text-white);
+  line-height: var(--leading-tight);
+  max-width: 500px;
+}
+
+.ctaRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.5rem;
+  background-color: var(--color-text-white);
+  color: var(--color-bg-dark);
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+
+.ctaButton:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+}
+
+.ctaPhone {
+  font-size: var(--text-small);
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.ctaPhone:hover {
+  color: var(--color-text-white);
+}
+
+.ctaHours {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .ctaContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ctaRight {
+    align-items: flex-start;
+  }
+}

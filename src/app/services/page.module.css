@@ -1,0 +1,431 @@
+/* ===================== SERVICES PAGE CSS ===================== */
+.hero {
+  padding: 0 0 var(--section-py-sm);
+  background-color: var(--color-bg-primary);
+}
+
+.breadcrumb {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 1.25rem var(--container-padding);
+  font-size: var(--text-small);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.breadcrumb a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb a:hover {
+  color: var(--color-accent);
+}
+
+.breadcrumb span {
+  opacity: 0.5;
+}
+
+.heroContent {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 1.5rem var(--container-padding) 3rem;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--gap-xl);
+  align-items: flex-end;
+}
+
+.heroHeading {
+  font-family: var(--font-heading);
+  font-size: var(--text-h1);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--color-text-primary);
+  margin-top: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.heroText {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text-body);
+  max-width: 480px;
+}
+
+/* Hero Feature Card Split */
+.heroCardWrapper {
+  max-width: var(--container-max);
+  margin: 0 auto 4rem;
+  padding: 0 var(--container-padding);
+}
+
+.heroCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  align-items: stretch;
+}
+
+.heroCardImageCol {
+  position: relative;
+  min-height: 320px;
+}
+
+.heroCardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 80px;
+}
+
+.heroCardContentCol {
+  padding: 3rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroCardHeading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--color-text-primary);
+  margin: 0.75rem 0 1.25rem;
+}
+
+.heroCardText {
+  font-size: var(--text-body);
+  line-height: 1.65;
+  color: var(--color-text-body);
+  margin-bottom: 2rem;
+}
+
+.heroCardBtn {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-accent);
+  color: var(--color-text-light);
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: 500;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all var(--transition-base);
+}
+
+.heroCardBtn:hover {
+  background-color: var(--color-bg-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(26, 58, 42, 0.15);
+}
+
+/* ===================== PRACTICES GRID ===================== */
+.practicesSection {
+  padding: var(--section-py) 0;
+  background-color: var(--color-bg-primary);
+  border-top: 1px solid var(--color-border);
+}
+
+.sectionInner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.sectionHeader {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--gap-xl);
+  margin-bottom: 3.5rem;
+  align-items: flex-end;
+}
+
+.sectionHeading {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  margin-top: 0.5rem;
+}
+
+.sectionSubtext {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-text-body);
+}
+
+.practicesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.practiceCard {
+  background-color: #eaf0ea;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.practiceCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  border-color: rgba(45, 94, 74, 0.3);
+}
+
+.cardTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.cardIcon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+}
+
+.cardNumber {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  color: var(--color-accent);
+  opacity: 0.85;
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--color-text-primary);
+  margin-bottom: 1rem;
+}
+
+.cardDescription {
+  font-size: 0.975rem;
+  line-height: 1.65;
+  color: var(--color-text-body);
+  margin-bottom: 1.75rem;
+}
+
+.helpLabel {
+  font-size: 0.725rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.85rem;
+}
+
+.helpList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.helpItem {
+  font-size: 0.925rem;
+  color: var(--color-text-body);
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.helpDash {
+  color: var(--color-text-muted);
+  font-weight: 300;
+}
+
+.cardFooter {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.teamText {
+  font-size: 0.825rem;
+  color: var(--color-text-muted);
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform var(--transition-fast);
+}
+
+.cardLink:hover {
+  text-decoration: underline;
+  transform: translateX(2px);
+}
+
+/* ===================== CLEAR UNDERSTANDING SECTION ===================== */
+.understandingSection {
+  padding: var(--section-py) 0;
+  background-color: var(--color-bg-secondary);
+  border-top: 1px solid var(--color-border);
+}
+
+.understandingGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: flex-start;
+}
+
+.understandingLeft {
+  max-width: 500px;
+}
+
+.understandingHeading {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  margin: 0.75rem 0 1.25rem;
+}
+
+.understandingLead {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text-body);
+}
+
+.understandingRight {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.understandingItem {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 2rem;
+}
+
+.understandingItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.itemHeading {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  margin-bottom: 0.65rem;
+}
+
+.itemText {
+  font-size: 0.975rem;
+  line-height: 1.65;
+  color: var(--color-text-body);
+}
+
+/* ===================== PROCESS / WORKING WITH LEGALIZE ===================== */
+.processSection {
+  padding: var(--section-py) 0;
+  background-color: var(--color-bg-primary);
+  border-top: 1px solid var(--color-border);
+}
+
+/* ===================== FAQ SECTION ===================== */
+.faqSection {
+  padding: var(--section-py) 0;
+  background-color: var(--color-bg-primary);
+  border-top: 1px solid var(--color-border);
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.faqLeft {
+  position: sticky;
+  top: 6rem;
+}
+
+.faqHeading {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  margin: 0.75rem 0 1.25rem;
+}
+
+.faqLead {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-text-body);
+  margin-bottom: 2rem;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 968px) {
+  .heroContent,
+  .sectionHeader,
+  .understandingGrid,
+  .faqGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .heroCard {
+    grid-template-columns: 1fr;
+  }
+
+  .heroCardImageCol {
+    min-height: 240px;
+  }
+
+  .heroCardImage {
+    border-top-left-radius: 0;
+  }
+
+  .heroCardContentCol {
+    padding: 2rem 1.5rem;
+  }
+
+  .practicesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .faqLeft {
+    position: static;
+  }
+}
